@@ -1,0 +1,29 @@
+\input{config/config}
+
+\begin{document}
+\pagenumbering{roman}
+\input{title}
+
+\input{main/legal}
+
+\input{abstract}
+\input{acknowledgment}
+
+\FloatBarrier
+\clearpage
+
+\input{main/list_of_figures}
+\input{main/list_of_tables}
+\microtypesetup{protrusion=false} % disables protrusion locally in the document
+\input{main/table_of_contents}
+\microtypesetup{protrusion=true} % enables protrusion
+
+\input{main/introduction_heading}
+\pagenumbering{arabic}
+\input{content}
+
+\input{main/references}
+
+\input{appendix}
+
+\end{document}

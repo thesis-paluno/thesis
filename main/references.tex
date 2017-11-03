@@ -1,0 +1,62 @@
+% Simple bibliography
+\clearpage
+\phantomsection
+\chapter*{\ReferencesHead}
+\chaptermark{\ReferencesHead}
+\printbibliography[heading=none]
+\nocite{*}
+\addcontentsline{toc}{chapter}{\ReferencesHead}
+
+% Complex bibliography
+%\clearpage
+%\phantomsection
+%\chapter*{References}
+%\chaptermark{References}
+%\addcontentsline{toc}{chapter}{References}
+%
+%\phantomsection
+%\section*{Secondary}
+%\sectionmark{Secondary}
+%\addcontentsline{toc}{section}{Secondary}
+%\printbibliography[heading=none, keyword={secondary}]
+%
+%\clearpage
+%\phantomsection
+%\section*{Primary}
+%\sectionmark{Primary}
+%\addcontentsline{toc}{section}{Primary}
+%
+%\phantomsection
+%\subsection*{Example 1}
+%\addcontentsline{toc}{subsection}{Example 1}
+%\printbibliography[heading=none, keyword={example1}]
+%
+%\phantomsection
+%\subsection*{Example 2}
+%\addcontentsline{toc}{subsection}{Example 2}
+%\printbibliography[heading=none, keyword={example2}]
+%
+%\phantomsection
+%\subsection*{Example 3}
+%\addcontentsline{toc}{subsection}{Example 3}
+%\printbibliography[heading=none, keyword={example3}]
+%%
+
+%% Filter example
+%\defbibfilter{web}{
+%  type=online or
+%  type=misc
+%}
+%
+%\defbibfilter{notweb}{
+%  not type=online and
+%  not type=misc
+%}
+%\printbibliography[heading=none, filter=notweb]
+%%
+
+%% Print Index
+%\clearpage
+%\printindex
+%%
+

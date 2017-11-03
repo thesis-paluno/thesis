@@ -1,0 +1,28 @@
+\newcommand{\BabelLanguage}{english}
+
+\documentclass[12pt, \BabelLanguage]{thesis}
+\usepackage[\BabelLanguage]{babel}
+
+% Borders
+\geometry{left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.4cm}
+
+% Line spacing
+\setstretch{1.0}
+
+% Load settings from project.tex and set citation style
+% IEEE style
+\thesissetup{config/project_en.tex}{ieee}
+% Alpha style
+%\thesissetup{project_en.tex}{trad-alpha}
+
+\ExecuteBibliographyOptions{%
+  maxcitenames=3
+}
+
+\addbibresource{bibliography.bib}
+
+% Break long URLs in references
+\input{main/break_biburl}
+
+% Set header and footer
+\input{pagestyle}
